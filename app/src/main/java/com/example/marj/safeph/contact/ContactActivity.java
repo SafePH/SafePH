@@ -74,12 +74,12 @@ public class ContactActivity extends AppCompatActivity {
         Gson gson = new Gson();
         Type type = new TypeToken<ArrayList<ContactModel>>(){}.getType();
         contacts = gson.fromJson(jsonText, type);
-        for(int i = 0; i < contacts.size(); i++){
-            Log.d(TAG, "getContacts(): " +
-                    "Name: " + contacts.get(i).getName() +
-                    " Phone: " + contacts.get(i).getPhone() +
-                    " Relation: " + contacts.get(i).getRelation());
-        }
+//        for(int i = 0; i < contacts.size(); i++){
+//            Log.d(TAG, "getContacts(): " +
+//                    "Name: " + contacts.get(i).getName() +
+//                    " Phone: " + contacts.get(i).getPhone() +
+//                    " Relation: " + contacts.get(i).getRelation());
+//        }
 
         setupRecyclerView();
     }

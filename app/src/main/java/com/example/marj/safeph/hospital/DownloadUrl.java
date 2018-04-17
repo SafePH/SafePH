@@ -19,7 +19,7 @@ import java.net.URL;
 public class DownloadUrl {
 
     public String readUrl(String myUrl) throws IOException{
-        Log.d("DownloadUrl","readUrl");
+        //Log.d("DownloadUrl","readUrl");
         String data = "";
         InputStream inputStream = null;
         HttpURLConnection urlConnection = null;
@@ -49,7 +49,7 @@ public class DownloadUrl {
             inputStream.close();
             urlConnection.disconnect();
         }
-        Log.d("DownloadUrl","Returning data = "+data);
+        //Log.d("DownloadUrl","Returning data = "+data);
         return data;
     }
 }

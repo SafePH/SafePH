@@ -102,7 +102,7 @@ public class HotlineEditActivity extends AppCompatActivity{
                     newName = etName.getText().toString();
                 if(!etPhone.getText().toString().isEmpty())
                     newPhone = etPhone.getText().toString();
-                Log.d("HotlineEditActivity",oldName+" "+oldPhone+" -- "+newName+" "+newPhone);
+                //Log.d("HotlineEditActivity",oldName+" "+oldPhone+" -- "+newName+" "+newPhone);
 
                 if (!etName.getText().toString().isEmpty() && !etPhone.getText().toString().isEmpty()){
                     Response.Listener<String> responseListener = new Response.Listener<String>() {
@@ -111,7 +111,7 @@ public class HotlineEditActivity extends AppCompatActivity{
                             try {
                                 JSONObject jsonResponse = new JSONObject(response);
                                 boolean success = jsonResponse.getBoolean("success");
-                                Log.d("ContactEditActivity", String.valueOf(jsonResponse));
+                                //Log.d("ContactEditActivity", String.valueOf(jsonResponse));
                                 if(success){
                                     Toast.makeText(HotlineEditActivity.this,"Edit hotline successful",Toast.LENGTH_SHORT).show();
                                     Intent intent = new Intent(HotlineEditActivity.this, HotlineActivity.class);

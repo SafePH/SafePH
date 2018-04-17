@@ -110,16 +110,16 @@ public class SignupBasicActivity extends AppCompatActivity{
                 intent.putExtra("allergies", data.getStringExtra("allergies"));
                 intent.putExtra("organdonor", data.getStringExtra("organdonor"));
 
-                Log.d("Basic","username = "+data.getStringExtra("username"));
-                Log.d("Basic","password = "+data.getStringExtra("password"));
-                Log.d("Basic","name = "+etName.getText().toString());
-                Log.d("Basic","bloodtype = "+etBloodtype.getText().toString());
-                Log.d("Basic","birthday = "+etBirthday.getText().toString());
-                Log.d("Basic","address = "+etAddress.getText().toString());
-                Log.d("Basic","diabetic = "+data.getStringExtra("diabetic"));
-                Log.d("Basic","medications = "+data.getStringExtra("medications"));
-                Log.d("Basic","allergies = "+data.getStringExtra("allergies"));
-                Log.d("Basic","organdonor = "+data.getStringExtra("organdonor"));
+//                Log.d("Basic","username = "+data.getStringExtra("username"));
+//                Log.d("Basic","password = "+data.getStringExtra("password"));
+//                Log.d("Basic","name = "+etName.getText().toString());
+//                Log.d("Basic","bloodtype = "+etBloodtype.getText().toString());
+//                Log.d("Basic","birthday = "+etBirthday.getText().toString());
+//                Log.d("Basic","address = "+etAddress.getText().toString());
+//                Log.d("Basic","diabetic = "+data.getStringExtra("diabetic"));
+//                Log.d("Basic","medications = "+data.getStringExtra("medications"));
+//                Log.d("Basic","allergies = "+data.getStringExtra("allergies"));
+//                Log.d("Basic","organdonor = "+data.getStringExtra("organdonor"));
 
                 if (etName.getText().toString().isEmpty() || etBloodtype.getText().toString().isEmpty() ||
                         etBirthday.getText().toString().isEmpty() || etAddress.getText().toString().isEmpty()){
@@ -148,16 +148,16 @@ public class SignupBasicActivity extends AppCompatActivity{
                 intent.putExtra("allergies", data.getStringExtra("allergies"));
                 intent.putExtra("organdonor", data.getStringExtra("organdonor"));
 
-                Log.d("Basic","username = "+data.getStringExtra("username"));
-                Log.d("Basic","password = "+data.getStringExtra("password"));
-                Log.d("Basic","username = "+etName.getText().toString());
-                Log.d("Basic","bloodtype = "+etBloodtype.getText().toString());
-                Log.d("Basic","birthday = "+etBirthday.getText().toString());
-                Log.d("Basic","address = "+etAddress.getText().toString());
-                Log.d("Basic","diabetic = "+data.getStringExtra("diabetic"));
-                Log.d("Basic","medications = "+data.getStringExtra("medications"));
-                Log.d("Basic","allergies = "+data.getStringExtra("allergies"));
-                Log.d("Basic","organdonor = "+data.getStringExtra("organdonor"));
+//                Log.d("Basic","username = "+data.getStringExtra("username"));
+//                Log.d("Basic","password = "+data.getStringExtra("password"));
+//                Log.d("Basic","username = "+etName.getText().toString());
+//                Log.d("Basic","bloodtype = "+etBloodtype.getText().toString());
+//                Log.d("Basic","birthday = "+etBirthday.getText().toString());
+//                Log.d("Basic","address = "+etAddress.getText().toString());
+//                Log.d("Basic","diabetic = "+data.getStringExtra("diabetic"));
+//                Log.d("Basic","medications = "+data.getStringExtra("medications"));
+//                Log.d("Basic","allergies = "+data.getStringExtra("allergies"));
+//                Log.d("Basic","organdonor = "+data.getStringExtra("organdonor"));
 
                 if (etName.getText().toString().isEmpty() || etBloodtype.getText().toString().isEmpty() ||
                         etBirthday.getText().toString().isEmpty() || etAddress.getText().toString().isEmpty()){

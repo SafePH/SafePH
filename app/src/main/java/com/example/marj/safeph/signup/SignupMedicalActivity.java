@@ -150,16 +150,16 @@ public class SignupMedicalActivity extends AppCompatActivity{
                     organdonor = "No";
                 intent.putExtra("organdonor", organdonor);
 
-                Log.d("Medical","username = "+data.getStringExtra("username"));
-                Log.d("Medical","password = "+data.getStringExtra("password"));
-                Log.d("Medical","name = "+data.getStringExtra("name"));
-                Log.d("Medical","bloodtype = "+data.getStringExtra("bloodtype"));
-                Log.d("Medical","birthday = "+data.getStringExtra("birthday"));
-                Log.d("Medical","address = "+data.getStringExtra("address"));
-                Log.d("Medical","diabetic = "+etDiabetic.getText().toString());
-                Log.d("Medical","medications = "+etMedications.getText().toString());
-                Log.d("Medical","allergies = "+etAllergies.getText().toString());
-                Log.d("Medical","organdonor = "+etOrgandonor.getText().toString());
+//                Log.d("Medical","username = "+data.getStringExtra("username"));
+//                Log.d("Medical","password = "+data.getStringExtra("password"));
+//                Log.d("Medical","name = "+data.getStringExtra("name"));
+//                Log.d("Medical","bloodtype = "+data.getStringExtra("bloodtype"));
+//                Log.d("Medical","birthday = "+data.getStringExtra("birthday"));
+//                Log.d("Medical","address = "+data.getStringExtra("address"));
+//                Log.d("Medical","diabetic = "+etDiabetic.getText().toString());
+//                Log.d("Medical","medications = "+etMedications.getText().toString());
+//                Log.d("Medical","allergies = "+etAllergies.getText().toString());
+//                Log.d("Medical","organdonor = "+etOrgandonor.getText().toString());
 
                 startActivity(intent);
             }
@@ -230,16 +230,16 @@ public class SignupMedicalActivity extends AppCompatActivity{
                 else
                     Toast.makeText(SignupMedicalActivity.this,"No field must be empty",Toast.LENGTH_SHORT).show();
 
-                Log.d("MedicalForDB","username = "+username);
-                Log.d("MedicalForDB","password = "+password);
-                Log.d("MedicalForDB","name = "+name);
-                Log.d("MedicalForDB","bloodtype = "+bloodtype);
-                Log.d("MedicalForDB","birthday = "+birthday);
-                Log.d("MedicalForDB","address = "+address);
-                Log.d("MedicalForDB","diabetic = "+diabetic);
-                Log.d("MedicalForDB","medications = "+medications);
-                Log.d("MedicalForDB","allergies = "+allergies);
-                Log.d("MedicalForDB","organdonor = "+organdonor);
+//                Log.d("MedicalForDB","username = "+username);
+//                Log.d("MedicalForDB","password = "+password);
+//                Log.d("MedicalForDB","name = "+name);
+//                Log.d("MedicalForDB","bloodtype = "+bloodtype);
+//                Log.d("MedicalForDB","birthday = "+birthday);
+//                Log.d("MedicalForDB","address = "+address);
+//                Log.d("MedicalForDB","diabetic = "+diabetic);
+//                Log.d("MedicalForDB","medications = "+medications);
+//                Log.d("MedicalForDB","allergies = "+allergies);
+//                Log.d("MedicalForDB","organdonor = "+organdonor);
             }
         });
     }

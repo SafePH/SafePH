@@ -235,14 +235,14 @@ public class ProfileEditActivity extends AppCompatActivity{
                 else
                     Toast.makeText(ProfileEditActivity.this,"No field must be empty",Toast.LENGTH_SHORT).show();
 
-                Log.d("ProfileEditForDB","name = "+etName.getText());
-                Log.d("ProfileEditForDB","bloodtype = "+etBloodtype.getText());
-                Log.d("ProfileEditForDB","birthday = "+etBirthday.getText());
-                Log.d("ProfileEditForDB","address = "+etAddress.getText());
-                Log.d("ProfileEditForDB","diabetic = "+diabetic);
-                Log.d("ProfileEditForDB","medications = "+etMedications.getText());
-                Log.d("ProfileEditForDB","allergies = "+etAllergies.getText());
-                Log.d("ProfileEditForDB","organdonor = "+organdonor);
+                //Log.d("ProfileEditForDB","name = "+etName.getText());
+                //Log.d("ProfileEditForDB","bloodtype = "+etBloodtype.getText());
+                //Log.d("ProfileEditForDB","birthday = "+etBirthday.getText());
+                //Log.d("ProfileEditForDB","address = "+etAddress.getText());
+                //Log.d("ProfileEditForDB","diabetic = "+diabetic);
+                //Log.d("ProfileEditForDB","medications = "+etMedications.getText());
+                //Log.d("ProfileEditForDB","allergies = "+etAllergies.getText());
+                //Log.d("ProfileEditForDB","organdonor = "+organdonor);
             }
         });
     }

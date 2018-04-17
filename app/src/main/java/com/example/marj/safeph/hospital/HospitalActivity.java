@@ -270,7 +270,7 @@ public class HospitalActivity extends AppCompatActivity implements OnMapReadyCal
     }
 
     private String getUrl(double latitude, double longitude, String nearbyPlace){
-        Log.d("HospitalActivity","getUrl");
+        //Log.d("HospitalActivity","getUrl");
         StringBuilder googlePlaceUrl = new StringBuilder("https://maps.googleapis.com/maps/api/place/nearbysearch/json?");
         googlePlaceUrl.append("location="+latitude+","+longitude);
         googlePlaceUrl.append("&radius="+PROXIMITY_RADIUS);
@@ -278,25 +278,25 @@ public class HospitalActivity extends AppCompatActivity implements OnMapReadyCal
         googlePlaceUrl.append("&sensor=true");
         googlePlaceUrl.append("&key="+"AIzaSyBjCX7JJXW0Nl5RES285v7BZzOVUK2FTcY");
 
-        Log.d(TAG,"url = "+googlePlaceUrl.toString());
+        //Log.d(TAG,"url = "+googlePlaceUrl.toString());
         return googlePlaceUrl.toString();
     }
 
     private void setupRecyclerView(){
-        Log.d("HospitalActivity","setupRecyclerView");
+        //Log.d("HospitalActivity","setupRecyclerView");
         recyclerView = findViewById(R.id.nh_recyclerview);
         recyclerView.setHasFixedSize(true);
 
         hospitalLayout = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(hospitalLayout);
 
-        for(int i = 0; i < hospitals.size(); i++){
-            Log.d(TAG, "hospitals in setupRV(): " +
-                    "Name: " + hospitals.get(i).getName() +
-                    " Address: " + hospitals.get(i).getAddress() +
-                    " Lat: " + hospitals.get(i).getLat() +
-                    " Lng: " + + hospitals.get(i).getLng());
-        }
+//        for(int i = 0; i < hospitals.size(); i++){
+//            Log.d(TAG, "hospitals in setupRV(): " +
+//                    "Name: " + hospitals.get(i).getName() +
+//                    " Address: " + hospitals.get(i).getAddress() +
+//                    " Lat: " + hospitals.get(i).getLat() +
+//                    " Lng: " + + hospitals.get(i).getLng());
+//        }
         hospitalAdapter = new HospitalAdapter(hospitals);
         recyclerView.setAdapter(hospitalAdapter);
     }

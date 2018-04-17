@@ -82,7 +82,7 @@ public class SignupActivity extends AppCompatActivity {
                     RequestQueue queue = Volley.newRequestQueue(SignupActivity.this);
                     queue.add(signupUserExists);
 
-                    Log.d("SignupActivity",username);
+                    //Log.d("SignupActivity",username);
                 }
             }
         });

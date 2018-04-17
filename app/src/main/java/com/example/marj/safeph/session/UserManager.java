@@ -66,7 +66,7 @@ public class UserManager {
         hotlineList.addAll(dbHotlines);
         String json = gson.toJson(hotlineList);
         editor.putString(KEY_HOTLINES, json);
-        Log.d(TAG,"hotlines: "+json);
+        //Log.d(TAG,"hotlines: "+json);
 
         editor.commit();
     }
@@ -77,7 +77,7 @@ public class UserManager {
         contactList.addAll(dbContacts);
         String json = gson.toJson(contactList);
         editor.putString(KEY_CONTACTS, json);
-        Log.d(TAG,"contacts: "+json);
+        //Log.d(TAG,"contacts: "+json);
 
         editor.commit();
     }

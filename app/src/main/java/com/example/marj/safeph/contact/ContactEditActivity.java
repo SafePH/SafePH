@@ -95,7 +95,7 @@ public class ContactEditActivity extends AppCompatActivity{
                     newPhone = etPhone.getText().toString();
                 if(!etRelation.getText().toString().isEmpty())
                     newRelation = etRelation.getText().toString();
-                Log.d("ContactEditActivity",oldName+" "+oldPhone+" "+oldRelation+" -- "+newName+" "+newPhone+" "+newRelation);
+                //Log.d("ContactEditActivity",oldName+" "+oldPhone+" "+oldRelation+" -- "+newName+" "+newPhone+" "+newRelation);
 
                 if (!etName.getText().toString().isEmpty() && !etPhone.getText().toString().isEmpty() && !etRelation.getText().toString().isEmpty()){
                     Response.Listener<String> responseListener = new Response.Listener<String>() {

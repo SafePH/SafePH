@@ -95,14 +95,14 @@ public class ProfileActivity extends AppCompatActivity {
         String jsonText = user.get(UserManager.KEY_CONTACTS);
         final ArrayList<ContactModel> contacts;
 
-        Log.d("Profile--","name = "+name);
-        Log.d("Profile--","bloodtype = "+bloodtype);
-        Log.d("Profile--","birthday = "+birthday);
-        Log.d("Profile--","address = "+address);
-        Log.d("Profile--","diabetic = "+diabetic);
-        Log.d("Profile--","medications = "+medication);
-        Log.d("Profile--","allergies = "+allergies);
-        Log.d("Profile--","organdonor = "+organdonor);
+//        Log.d("Profile--","name = "+name);
+//        Log.d("Profile--","bloodtype = "+bloodtype);
+//        Log.d("Profile--","birthday = "+birthday);
+//        Log.d("Profile--","address = "+address);
+//        Log.d("Profile--","diabetic = "+diabetic);
+//        Log.d("Profile--","medications = "+medication);
+//        Log.d("Profile--","allergies = "+allergies);
+//        Log.d("Profile--","organdonor = "+organdonor);
 
         Gson gson = new Gson();
         Type type = new TypeToken<ArrayList<ContactModel>>(){}.getType();

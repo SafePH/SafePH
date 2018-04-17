@@ -37,7 +37,7 @@ public class HospitalManager {
         hospitalList.addAll(hospitals);
         String json = gson.toJson(hospitalList);
         editor.putString(KEY_HOSPITALS, json);
-        Log.d(TAG,"hospitals: "+json);
+        //Log.d(TAG,"hospitals: "+json);
 
         editor.commit();
     }

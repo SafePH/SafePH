@@ -74,11 +74,11 @@ public class HotlineActivity extends AppCompatActivity{
         Gson gson = new Gson();
         Type type = new TypeToken<ArrayList<HotlineModel>>(){}.getType();
         hotlines = gson.fromJson(jsonText, type);
-        for(int i = 0; i < hotlines.size(); i++){
-            Log.d(TAG, "getHotlines(): " +
-                    "Name: " + hotlines.get(i).getName() +
-                    " Phone: " + hotlines.get(i).getPhone());
-        }
+//        for(int i = 0; i < hotlines.size(); i++){
+//            Log.d(TAG, "getHotlines(): " +
+//                    "Name: " + hotlines.get(i).getName() +
+//                    " Phone: " + hotlines.get(i).getPhone());
+//        }
 
         setupRecyclerView();
     }

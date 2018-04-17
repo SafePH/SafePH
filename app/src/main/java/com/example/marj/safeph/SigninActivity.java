@@ -102,15 +102,15 @@ public class SigninActivity extends AppCompatActivity{
                                 String medications = jsonResponse.getString("medications");
                                 String allergies = jsonResponse.getString("allergies");
 
-                                Log.d("Signin","username = "+username);
-                                Log.d("Signin","name = "+name);
-                                Log.d("Signin","bloodtype = "+bloodtype);
-                                Log.d("Signin","birthday = "+birthday);
-                                Log.d("Signin","address = "+address);
-                                Log.d("Signin","diabetic = "+diabetic);
-                                Log.d("Signin","medications = "+medications);
-                                Log.d("Signin","allergies = "+allergies);
-                                Log.d("Signin","organdonor = "+organdonor);
+//                                Log.d("Signin","username = "+username);
+//                                Log.d("Signin","name = "+name);
+//                                Log.d("Signin","bloodtype = "+bloodtype);
+//                                Log.d("Signin","birthday = "+birthday);
+//                                Log.d("Signin","address = "+address);
+//                                Log.d("Signin","diabetic = "+diabetic);
+//                                Log.d("Signin","medications = "+medications);
+//                                Log.d("Signin","allergies = "+allergies);
+//                                Log.d("Signin","organdonor = "+organdonor);
 
                                 //Toast.makeText(getApplicationContext(), "User Login Status: " + session.isLoggedIn(), Toast.LENGTH_SHORT).show();
 
@@ -170,7 +170,7 @@ public class SigninActivity extends AppCompatActivity{
                 try {
                     JSONObject jsonResponse = new JSONObject(response);
                     boolean success = jsonResponse.getBoolean("success");
-                    Log.d(TAG, String.valueOf("jsonResponse hotlines: "+jsonResponse));
+                    //Log.d(TAG, String.valueOf("jsonResponse hotlines: "+jsonResponse));
 
                     if(success){
                         for(int i = 0; i < jsonResponse.length()-1; i++){
@@ -181,11 +181,11 @@ public class SigninActivity extends AppCompatActivity{
                         }
                     }
 
-                    for(int i = 0; i < hotlines.size(); i++){
-                        Log.d(TAG, "getHotlines(): " +
-                                "Name: " + hotlines.get(i).getName() +
-                                " Phone: " + hotlines.get(i).getPhone());
-                    }
+//                    for(int i = 0; i < hotlines.size(); i++){
+//                        Log.d(TAG, "getHotlines(): " +
+//                                "Name: " + hotlines.get(i).getName() +
+//                                " Phone: " + hotlines.get(i).getPhone());
+//                    }
                     userManager.setDbHotlines(hotlines);
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -203,7 +203,7 @@ public class SigninActivity extends AppCompatActivity{
     }
 
     public void getContacts(Context context){
-        Log.d(TAG, "getContacts: ");
+        //Log.d(TAG, "getContacts: ");
         final ArrayList<ContactModel> contacts = new ArrayList<>();
         final UserManager userManager = new UserManager(context);
 
@@ -213,7 +213,7 @@ public class SigninActivity extends AppCompatActivity{
                 try {
                     JSONObject jsonResponse = new JSONObject(response);
                     boolean success = jsonResponse.getBoolean("success");
-                    Log.d(TAG, String.valueOf("jsonResponse contacts: "+jsonResponse));
+                    //Log.d(TAG, String.valueOf("jsonResponse contacts: "+jsonResponse));
 
                     if(success){
                         for(int i = 0; i < jsonResponse.length()-1; i++){
@@ -225,12 +225,12 @@ public class SigninActivity extends AppCompatActivity{
                         }
                     }
 
-                    for(int i = 0; i < contacts.size(); i++){
-                        Log.d(TAG, "getContacts(): " +
-                                "Name: " + contacts.get(i).getName() +
-                                " Phone: " + contacts.get(i).getPhone() +
-                                " Relation: " + contacts.get(i).getRelation());
-                    }
+//                    for(int i = 0; i < contacts.size(); i++){
+//                        Log.d(TAG, "getContacts(): " +
+//                                "Name: " + contacts.get(i).getName() +
+//                                " Phone: " + contacts.get(i).getPhone() +
+//                                " Relation: " + contacts.get(i).getRelation());
+//                    }
                     userManager.setDbContacts(contacts);
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -268,15 +268,15 @@ public class SigninActivity extends AppCompatActivity{
                         String medications = jsonResponse.getString("medications");
                         String allergies = jsonResponse.getString("allergies");
 
-                        Log.d("Signin--","username = "+username);
-                        Log.d("Signin--","name = "+name);
-                        Log.d("Signin--","bloodtype = "+bloodtype);
-                        Log.d("Signin--","birthday = "+birthday);
-                        Log.d("Signin--","address = "+address);
-                        Log.d("Signin--","diabetic = "+diabetic);
-                        Log.d("Signin--","medications = "+medications);
-                        Log.d("Signin--","allergies = "+allergies);
-                        Log.d("Signin--","organdonor = "+organdonor);
+//                        Log.d("Signin--","username = "+username);
+//                        Log.d("Signin--","name = "+name);
+//                        Log.d("Signin--","bloodtype = "+bloodtype);
+//                        Log.d("Signin--","birthday = "+birthday);
+//                        Log.d("Signin--","address = "+address);
+//                        Log.d("Signin--","diabetic = "+diabetic);
+//                        Log.d("Signin--","medications = "+medications);
+//                        Log.d("Signin--","allergies = "+allergies);
+//                        Log.d("Signin--","organdonor = "+organdonor);
 
                         userManager.setUser(username,password,name,address,bloodtype,birthday,diabetic,organdonor,medications,allergies);
                     }
