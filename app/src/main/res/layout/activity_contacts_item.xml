@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/eci_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/item_bg" />
+
+    <ImageView
+        android:id="@+id/eci_relation_box"
+        android:layout_width="88dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/eci_item"
+        app:layout_constraintEnd_toStartOf="@+id/eci_call"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/eci_name"
+        app:layout_constraintTop_toTopOf="@+id/eci_item"
+        app:srcCompat="@drawable/ec_relation" />
+
+    <TextView
+        android:id="@+id/eci_relation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Mother"
+        android:textColor="#F2F2F2"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/eci_relation_box"
+        app:layout_constraintEnd_toEndOf="@+id/eci_relation_box"
+        app:layout_constraintStart_toStartOf="@+id/eci_relation_box"
+        app:layout_constraintTop_toTopOf="@+id/eci_relation_box" />
+
+    <TextView
+        android:id="@+id/eci_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="Rose"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/eci_item"
+        app:layout_constraintTop_toTopOf="@+id/eci_item" />
+
+    <TextView
+        android:id="@+id/eci_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="2dp"
+        android:text="1234567"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/eci_item"
+        app:layout_constraintTop_toBottomOf="@+id/eci_name" />
+
+    <ImageView
+        android:id="@+id/eci_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/eci_item"
+        app:layout_constraintTop_toTopOf="@+id/eci_item"
+        app:srcCompat="@android:drawable/ic_menu_call" />
+
+</android.support.constraint.ConstraintLayout>

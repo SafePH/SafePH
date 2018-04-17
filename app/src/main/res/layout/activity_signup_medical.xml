@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/m_pink_top"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pink_top" />
+
+    <ImageView
+        android:id="@+id/m_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/signin_logo" />
+
+    <ImageView
+        android:id="@+id/m_diabetic_box"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m_basic_btn"
+        app:srcCompat="@drawable/profile_regular_rectangle" />
+
+    <EditText
+        android:id="@+id/m_diabetic_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="diabetic"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/m_diabetic_box"
+        app:layout_constraintStart_toStartOf="@+id/m_diabetic_box"
+        app:layout_constraintTop_toTopOf="@+id/m_diabetic_box" />
+
+    <ImageView
+        android:id="@+id/m_medication_box"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m_diabetic_box"
+        app:srcCompat="@drawable/profile_regular_rectangle" />
+
+    <EditText
+        android:id="@+id/m_medication_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:hint="medication"
+        android:inputType="textPersonName"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/m_medication_box"
+        app:layout_constraintEnd_toEndOf="@+id/m_medication_box"
+        app:layout_constraintStart_toStartOf="@+id/m_medication_box"
+        app:layout_constraintTop_toTopOf="@+id/m_medication_box" />
+
+    <ImageView
+        android:id="@+id/m_allergies_box"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m_medication_box"
+        app:srcCompat="@drawable/profile_regular_rectangle" />
+
+    <EditText
+        android:id="@+id/m_allergies_et"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:hint="allergies"
+        android:inputType="text"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/m_allergies_box"
+        app:layout_constraintEnd_toEndOf="@+id/m_allergies_box"
+        app:layout_constraintStart_toStartOf="@+id/m_allergies_box"
+        app:layout_constraintTop_toTopOf="@+id/m_allergies_box" />
+
+    <ImageView
+        android:id="@+id/m_organ_donor_box"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m_allergies_box"
+        app:srcCompat="@drawable/profile_regular_rectangle" />
+
+    <EditText
+        android:id="@+id/m_organ_donor_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:focusable="false"
+        android:hint="organ donor"
+        android:inputType="textPostalAddress"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/m_organ_donor_box"
+        app:layout_constraintStart_toStartOf="@+id/m_organ_donor_box"
+        app:layout_constraintTop_toTopOf="@+id/m_organ_donor_box" />
+
+    <ImageView
+        android:id="@+id/imageView41"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m_logo"
+        app:srcCompat="@drawable/su_medical_pink_btn" />
+
+    <ImageView
+        android:id="@+id/m_basic_btn"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView41"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m_logo"
+        app:srcCompat="@drawable/su_basic_gray_btn" />
+
+    <ImageView
+        android:id="@+id/sum_signup_btn"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/m_organ_donor_box"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/su_submit_btn" />
+
+    <CheckBox
+        android:id="@+id/diabetic_yes_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@color/colorAccent"
+        android:text="Yes"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/m_diabetic_box"
+        app:layout_constraintStart_toEndOf="@+id/m_diabetic_et"
+        app:layout_constraintTop_toTopOf="@+id/m_diabetic_box" />
+
+    <CheckBox
+        android:id="@+id/diabetic_no_cd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@color/colorAccent"
+        android:text="No"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/diabetic_yes_cb"
+        app:layout_constraintEnd_toEndOf="@+id/m_diabetic_box"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/diabetic_yes_cb"
+        app:layout_constraintTop_toTopOf="@+id/diabetic_yes_cb"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <CheckBox
+        android:id="@+id/organdonor_yes_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@color/colorAccent"
+        android:text="Yes"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/m_organ_donor_box"
+        app:layout_constraintStart_toEndOf="@+id/m_organ_donor_et"
+        app:layout_constraintTop_toTopOf="@+id/m_organ_donor_box" />
+
+    <CheckBox
+        android:id="@+id/organdonor_no_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:buttonTint="@color/colorAccent"
+        android:text="No"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/organdonor_yes_cb"
+        app:layout_constraintEnd_toEndOf="@+id/m_organ_donor_box"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/organdonor_yes_cb"
+        app:layout_constraintTop_toTopOf="@+id/organdonor_yes_cb"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+</android.support.constraint.ConstraintLayout>
